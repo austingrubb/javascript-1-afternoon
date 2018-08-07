@@ -142,7 +142,7 @@ function sampleCallbackTwo() {
 function invoker(sampleCallbackOne){
   return sampleCallbackOne()
 }
-invoker()
+
 //////////////////PROBLEM 9////////////////////
 
 let duck = "cute";
@@ -189,9 +189,7 @@ function outerFn(){
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-function innerFn(){
-  return outerFn()
-}
+let innerFn = outerFn()
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
